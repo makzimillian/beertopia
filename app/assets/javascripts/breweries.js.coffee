@@ -11,6 +11,10 @@
     y =
       lat: x.lat
       lng: x.lng
+      picture:
+        url: "/assets/beer-icon.png"
+        width: 36
+        height: 36
       infowindow: x.name
     array.push y
 
