@@ -3,12 +3,9 @@
 <div class="row">
 
   <% @items.each do |item| %>
-    <!-- <p><%= item.name %> for the price <%= item.price %>
-     and it's image path is <%= item.image_path %><img src="/assets/<%= item.image_path %>" class="item-image"></p> -->
-
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
-        <img src="/assets/<%= item.image_path %>" class="item-image">
+        <img src="<%= image_path(item.image_path) %>" class="item-image">
         <div class="caption">
           <h3><%= item.name %></h3>
           <p><%= item.description %></p>
